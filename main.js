@@ -11,6 +11,13 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+/*===== PRELOADER =======*/
+var loader = document.getElementbyId("preloader");
+wwindows.addEventListener("load" , function(){
+   loader.style.display = "none";
+}
+)
+
 /*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');   
 
